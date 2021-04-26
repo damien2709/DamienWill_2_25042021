@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Reservia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,600;1,300;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/4080d911bd.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
 <!-- SECTION HEADER-->
     <header class="header">
-        <div class="logo"></div>
-        <div class="inscri"></div>
+        <div class="logo"><img src="images/logo/Reservia@3x.png" alt="Logo"></div>
+        <div class="inscri"><a href="#">S'inscrire</a></div>
         <nav class="barnav">
             <a href="#hebergement" class="barnav__a">Hébergements</a>
             <a href="#activites" class="barnav__a">Activités</a>
@@ -24,12 +28,13 @@
     <section class="recherche">
         <h1 class="heading heading--h1">Trouvez votre hébergement pour des vacances de rêve</h1>
         <p class="text text--recherche">En plein centre ville ou en pleine nature</p>
+
         <div class="barsearch">
-            <img class="barsearch__ici" src="" alt="icone map">
+            <i class="fas fa-map-marker-alt"></i> <!-- this icon's 1) style prefix == fas and 2) icon name == camera -->
             <form action="#" class="barsearch__form">
                 <input class="barsearch__input" type="text" value="Marseille, France">
             </form>
-            <img class="barsearch__loupe" src="" alt="icone loupe">
+            <i class="fas fa-search"></i>
             <div class="barsearch__recherch">Rechercher</div>
         </div>
         <div class="filtre">

@@ -1,0 +1,18 @@
+/* Variables */
+:root{
+    --primary-color: #0065FC;
+    --secondary-color: #DEEBFF;
+    --back-color: #F2F2F2;
+}
+
+/* GENERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Raleway", Helvetica, sans-serif;
+}
