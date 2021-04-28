@@ -150,6 +150,7 @@ body{
     background: var(--primary-color);
     color: white;
     font-size: 0.9em;
+    cursor: pointer;
 }
 
 @media (max-width: 768px){
