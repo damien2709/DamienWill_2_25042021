@@ -32,28 +32,30 @@
             <h1 class="heading heading--h1">Trouvez votre hébergement pour des vacances de rêve</h1>
             <p class="text text--recherche">En plein centre ville ou en pleine nature</p>
             <form action="#" class="form">
-                <i class="fas fa-map-marker-alt"></i> <!-- this icon's 1) style prefix == fas and 2) icon name == camera -->
+                <div class="form__map"><i class="fas fa-map-marker-alt"></i></div> <!-- this icon's 1) style prefix == fas and 2) icon name == camera -->
                 <input class="form__input" type="text" value="Marseille, France">
-                <i class="fas fa-search"><input type="submit" class="form__submit--icone"></i>
+                <div class="loupe">
+                    <input type="submit" value="" class="loupe__submit">
+                </div>
                 <input type="submit" value="Rechercher" class="form__submit">
             </form>   
                    
             <div class="filtre">
                 <div class="text text--filtre">Filtres</div>
                 <div class="filtre__button">
-                    <i class="fas fa-money-bill-wave"></i>
+                    <div class="filtre__button__div"><i class="fas fas--filtre fa-money-bill-wave"></i></div>
                     <div class="text text--filtre">Économique</div>
                 </div>
                 <div class="filtre__button">
-                    <i class="fas fa-child"></i>
+                    <div class="filtre__button__div"><i class="fas fas--filtre fa-child"></i></div>
                     <div class="text text--filtre">Familial</div>
                 </div>
                 <div class="filtre__button">
-                    <i class="fas fa-heart"></i>
+                    <div class="filtre__button__div"><i class="fas fas--filtre fa-heart"></i></div>
                     <div class="text text--filtre">Romantique</div>
                 </div>
                 <div class="filtre__button">
-                    <i class="fas fa-dog"></i>
+                    <div class="filtre__button__div"><i class="fas fas--filtre fa-dog"></i></div>
                     <div class="text text--filtre">Animaux autorisés</div>
                 </div> 
             </div>
