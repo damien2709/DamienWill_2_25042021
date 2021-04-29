@@ -106,7 +106,7 @@ strong{
 
 .inscri__a{
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
     color: var(--primary-color);
     transform: scale(1);
     transition: transform 250ms;
