@@ -3,9 +3,10 @@
     --primary-color: #0065FC;
     --secondary-color: #DEEBFF;
     --back-button: rgb(48, 47, 47);
-    --back-cont: rgb(224, 224, 224);
+    --back-cont: rgb(238, 238, 238);
     --back-color: #F2F2F2;
     --border-button: rgb(201, 201, 201);
+    --box-shadow: 0 3px 10px rgb(173, 173, 173); 
 }
 
 /* GENERAL */
@@ -23,7 +24,7 @@ body{
 .container{
     max-width: 1100px;
     margin: auto;
-    padding: 0 20px;
+    border: 1px solid rgb(216, 216, 216);
     
 }
 
@@ -31,9 +32,20 @@ body{
     font-size: 1.2em;
 }
 
+.heading--h2{
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
 .heading--h3{
     font-size: 0.7em;
-    font-weight: 800;
+    font-weight: 700;
+}
+
+.heading--h4{
+    font-size: 0.9em;
+    font-weight: 700;
+    margin-bottom: 15px;
 }
 
 .text{
@@ -41,6 +53,8 @@ body{
 }
 
 a{
+    text-decoration: none;
+    color: black;
     cursor: pointer;
 }
 
@@ -54,6 +68,7 @@ strong{
     display: flex;
     align-items: center;
     margin: 25px 0;
+    padding: 0 40px;
 }
 
 .logo{
@@ -103,6 +118,10 @@ strong{
 }
 
 /* SECTION RECHERCHE */ 
+
+.recherche{
+    padding: 0 40px;
+}
 
 .text--recherche{
     margin: 10px  0 15px 0;
@@ -234,6 +253,8 @@ strong{
 .hebergement{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 0 40px;
 }
 
 .marseille{
@@ -244,7 +265,7 @@ strong{
     border-radius: 15px;
 }
 
-.heading--h1--marseille{
+.heading--h2--marseille{
     margin-bottom: 20px;
 }
 
@@ -261,6 +282,7 @@ strong{
     padding: 3px;
     background: white;
     border-radius: 15px;
+    box-shadow: var(--box-shadow);
     
 }
 
@@ -362,7 +384,8 @@ strong{
     padding: 3px;
     display: flex;
     background: white;
-    border-radius: 15px;  
+    border-radius: 15px; 
+    box-shadow: var(--box-shadow); 
 }
 
 .popcard__left{
@@ -403,3 +426,121 @@ strong{
     margin-top: auto;
 }
 
+/* SECTION ACTIVITES */
+
+.activ{
+    margin-bottom: 40px;
+    padding: 0 40px;
+}
+.activ__cont{
+    height: 350px;
+    margin-top: 25px;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    grid-template-areas: 
+    "port pom cal gar"
+    "port pom cal gar"
+    "port pom cal gar"
+    "port pom cal gar"
+    "port pom cal gar"
+    "port pom cal lon"
+    "port fri cal lon"
+    "port fri cal lon"
+    "port fri cal lon"
+    "port fri cal lon";
+}
+
+.activcard{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+}
+
+.activcard--top{
+    flex: 1 1 auto;
+    border-radius: 15px 15px 0 0 ;
+}
+.activcard--bottom{
+    height: 45px;
+    padding: 15px 10px;
+}
+
+.activcard--port{
+    grid-area: port;  
+}
+
+.activcard--port__top{
+    background: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg) no-repeat center center;
+    background-size: 200%;   
+}
+
+.activcard--pom{
+    grid-area: pom;
+}
+
+.activcard--pom__top{
+    background: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg) no-repeat center 40%;
+    background-size: cover;
+}
+
+.activcard--fri{
+    grid-area: fri;
+}
+
+.activcard--fri__top{
+    background: url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg) no-repeat center 30%;
+    background-size: 100%;
+}
+
+.activcard--cal{
+    grid-area: cal;
+}
+
+.activcard--cal__top{
+    background: url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg) no-repeat center center;
+    background-size: 250%;
+    filter: brightness(140%);
+}
+
+.activcard--gar{
+    grid-area: gar;
+}
+
+.activcard--gar__top{
+    background: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg) no-repeat center 20%;
+    background-size: cover;
+}
+
+.activcard--lon{
+    grid-area: lon;
+}
+
+.activcard--lon__top{
+    background: url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg) no-repeat center 30%;
+    background-size: 110%;
+    filter: brightness(110%);
+}
+
+/* SECTION FOOTER */
+
+.footer{
+    height: 190px;
+    background: var(--back-cont);
+}
+
+.footer__cont{
+    display: flex;
+    padding: 40px;
+}
+
+.footer__div{
+    margin-right: 150px;
+}
+
+.footer__a{
+    line-height: 25px;
+}
