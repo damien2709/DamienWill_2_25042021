@@ -17,8 +17,8 @@
         <header class="header">
             <div class="logo"><img class="logo__img" src="images/logo/Reservia.svg" alt="Logo Reservia Company"></div>
             <nav class="barnav">
-                <a href="#hebergement" class="barnav__a">Hébergements</a>
-                <a href="#activites" class="barnav__a barnav__a--activ">Activités</a>
+                <a href="#hebergement" class="barnav__a barnav__a--activ">Hébergements</a>
+                <a href="#activites" class="barnav__a ">Activités</a>
             </nav>
             <div class="inscri">
                 <a class="inscri__a" href="">S'inscrire</a>
@@ -34,19 +34,23 @@
             <form action="#" class="form">
                 <div class="form__map"><i class="fas fa-map-marker-alt"></i></div> <!-- this icon's 1) style prefix == fas and 2) icon name == camera -->
                 <input class="form__input" type="search" value="Marseille, France">
-                <div class="loupe">
-                    <input type="submit" value="" class="loupe__submit">
+                <div class="loupecont">
+                    <div class="loupe">
+                        <i class="fas fa-search"></i>
+                        <input type="submit" value="" class="loupe__submit">
+                    </div>
+                    
                 </div>
                 <input type="submit" value="Rechercher" class="form__submit">
             </form>   
                    
             <div class="filtre">
-                <div class="text text--filtre">Filtres</div>
-                <div class="filtre__button">
+                <div class="text text--filtre f1">Filtres</div>
+                <div class="filtre__button f2">
                     <div class="filtre__button__div"><i class="fas fas--filtre fa-money-bill-wave"></i></div>
                     <div class="text text--filtre">Économique</div>
                 </div>
-                <div class="filtre__button">
+                <div class="filtre__button f3">
                     <div class="filtre__button__div"><i class="fas fas--filtre fa-child"></i></div>
                     <div class="text text--filtre">Familial</div>
                 </div>
@@ -247,20 +251,20 @@
         <footer class="footer">
             <div class="footer__cont">
                 <div class="footer__div">
-                    <h4 class="heading heading--h4">A propos</h4>
+                    <h3 class="heading heading--h4">A propos</h3>
                     <p class="text"><a class="footer__a" href="#">Fonctionnement du site</a></p>
                     <p class="text"><a class="footer__a" href="#">Conditions générales de vente</a></p>
                     <p class="text"><a class="footer__a" href="#">Données et confidentialité</a></p>
                 </div>
 
                 <div class="footer__div">
-                    <h4 class="heading heading--h4">Nos hébergements</h4>
+                    <h3 class="heading heading--h4">Nos hébergements</h3>
                     <p class="text"><a class="footer__a" href="#">Charte et qualité</a></p>
                     <p class="text"><a class="footer__a" href="#">Soumettre votre hôtel</a></p>
                 </div>
 
                 <div class="footer__div">
-                    <h4 class="heading heading--h4">Assistance</h4>
+                    <h3 class="heading heading--h4">Assistance</h3>
                     <p class="text"><a class="footer__a" href="#">Centre d'aide</a></p>
                     <p class="text"><a class="footer__a" href="#">Nous contacter</a></p>
                 </div>
