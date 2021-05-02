@@ -24,7 +24,7 @@ body{
 
 .container{
     max-width: 1100px;
-    border: 1px solid rgb(216, 216, 216);   
+    margin: auto;
 }
 
 .heading--h1{
@@ -713,14 +713,19 @@ strong{
 @media (max-width: 499px){
     .activcard{
         width: 100%;
-
+    }
+    .activcard--port__top{
+        background-size: 100%;   
+    }
+    .activcard--cal__top{
+        background-size: 150%;
     }
 }
 
 /* SECTION FOOTER */
 
 .footer{
-    height: 190px;
+    height: auto;
     background: var(--back-cont);
 }
 
