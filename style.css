@@ -19,13 +19,12 @@
 
 body{
     font-family: "Raleway", Helvetica, sans-serif;
+    padding: 0 40px;
 }
 
 .container{
     max-width: 1100px;
-    margin: 0 auto;
-    border: 1px solid rgb(216, 216, 216);
-    
+    border: 1px solid rgb(216, 216, 216);   
 }
 
 .heading--h1{
@@ -62,13 +61,18 @@ strong{
     font-weight: 600;
 }
 
+@media (max-width: 570px){
+    body{
+        padding: 0;
+    }
+}
+
 /* SECTION HEADER */
 
 .header{
     display: flex;
     align-items: center;
     margin: 25px 0;
-    padding: 0 40px;
 }
 
 .logo__img{
@@ -117,6 +121,7 @@ strong{
     .logo{
         min-width: 200px;
         order: -2;
+        margin-left: 20px;
     }
     .barnav{
         width: 100%;
@@ -140,14 +145,11 @@ strong{
     .inscri{
         order: -1;
         margin-left: auto;
+        margin-right: 20px;
     }
 }
 
 /* SECTION RECHERCHE */ 
-
-.recherche{
-    padding: 0 40px;
-}
 
 .text--recherche{
     margin: 10px  0 15px 0;
@@ -332,6 +334,12 @@ strong{
     }
 }
 
+@media (max-width: 570px){
+    .recherche{
+        margin: 0 20px;
+    }
+}
+
 /* SECTION PRESENTATION */
 
         /* PRESENTATION / HEBERGEMENT */
@@ -339,7 +347,6 @@ strong{
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
-    padding: 0 40px;
 }
 
 .marseille{
@@ -578,7 +585,6 @@ strong{
 
 .activ{
     margin-bottom: 40px;
-    padding: 0 40px;
 }
 .activ__cont{
     
@@ -696,9 +702,17 @@ strong{
     }
 }
 
+@media (max-width: 570px){
+    .activ{
+        margin: 0 20px 35px 20px;
+
+    }
+}
+
 @media (max-width: 499px){
     .activcard{
         width: 100%;
+
     }
 }
 
