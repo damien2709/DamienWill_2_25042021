@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservia</title>
-    <link rel="stylesheet" href="style_autoprefixer.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600;700;800;900&display=swap" rel="stylesheet">  
     <script src="https://kit.fontawesome.com/4080d911bd.js" crossorigin="anonymous"></script>
@@ -36,15 +36,17 @@
             <p class="text text--recherche">En plein centre ville ou en pleine nature</p>
             <form action="#" class="form">
                 <div class="form__map"><i class="fas fa-map-marker-alt"></i></div> <!-- this icon's 1) style prefix == fas and 2) icon name == camera -->
-                <input class="form__input" type="search" value="Marseille, France">
-                <div class="loupecont">
-                    <div class="loupe">
-                        <i class="fas fa-search"></i>
-                        <input type="submit" value="" class="loupe__submit">
+                <div class="form__input-cont">
+                    <input class="form__input" type="search" value="Marseille, France">
+                    <div class="loupecont">
+                        <div class="loupe">
+                            <i class="fas fa-search"></i>
+                            <input type="submit" value="" class="loupe__submit">
+                        </div>
                     </div>
-                    
+                    <input type="submit" value="Rechercher" class="form__submit">
                 </div>
-                <input type="submit" value="Rechercher" class="form__submit">
+                
             </form>   
                    
             <div class="filtre">
