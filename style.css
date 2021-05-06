@@ -149,7 +149,7 @@ strong {
     .header {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        padding: 0;
+        padding: 20px 0 0 0;
     }
 
     .logo {
@@ -172,10 +172,11 @@ strong {
 
     .barnav__a {
         width: 50%;
-        text-align: center;
         padding-bottom: 10px;
         padding-top: 0;
         margin-right: 0;
+        text-align: center;
+        font-weight: 400;
         border-bottom: 3px solid var(--back-color);
     }
 
@@ -190,6 +191,10 @@ strong {
         order: -1;
         margin-left: auto;
         margin-right: 20px;
+        font-weight: 600;
+    }
+    .inscri__a{
+        font-weight: 700;
     }
 }
 
@@ -217,12 +222,16 @@ strong {
 }
 
 .form__map {
-    background: var(--border-button);
-    border-radius: 10px 0 0 10px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--back-cont);
+    border-radius: 15px 0 0 15px;
 }
 
 .fa-map-marker-alt {
-    margin-top: 5px;
+    display: block;
 }
 
 .form__input-cont {
@@ -231,7 +240,7 @@ strong {
     display: -ms-flexbox;
     display: flex;
     position: relative;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 15px 15px 0;
 }
 
 .form__input {
@@ -239,9 +248,9 @@ strong {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
-    padding-left: 5px;
+    padding-left: 15px;
     outline: none;
-    border: 1px solid var(--border-button);
+    border: 1px solid var(--back-cont);
     font-weight: bold;
     font-size: 0.9em;
 }
@@ -249,11 +258,14 @@ strong {
 .loupecont {
     width: 40px;
     height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     right: 0px;
     text-align: center;
     line-height: 40px;
-    border-radius: 10px;
+    border-radius: 15px;
     background: var(--primary-color);
 }
 
@@ -290,18 +302,6 @@ strong {
 
 /* RECHERCHE/ FORM/ MEDIA QUERIES */
 
-@media (max-width: 570px) {
-    .recherche {
-        margin: 0 20px;
-    }
-    .text--recherche{
-        font-size: 1em;
-    }
-    .form__input{
-        font-size: 1em;
-    }
-}
-
 @media (min-width: 767px) {
     .loupecont {
         display: none;
@@ -316,11 +316,31 @@ strong {
     }
 
     .form__input {
-        border-radius: 0 10px 10px 0;
+        border-radius: 0 15px 15px 0;
     }
 
     .form__submit {
         display: none;
+    }
+}
+
+@media (max-width: 570px) {
+    .recherche {
+        margin: 0 20px;
+    }
+    .text--recherche{
+        font-size: 1em;
+        margin-bottom: 30px;
+    }
+    .form{
+        height: 50px;
+    }
+    .form__input{
+        font-size: 1em;
+    }
+    .loupecont{
+        height: 50px;
+        width: 50px;
     }
 }
 
@@ -675,10 +695,14 @@ strong {
         justify-content: space-around;
     }
     .text--hebcard{
-        padding-top: 5px;
+        padding-top: 8px;
+        padding-bottom: 5px;
     }
     .text--marseille{
         font-size: 1em;
+    }
+    .note--marseille > *{
+        font-size: 0.7em;
     }
    
 }
@@ -803,6 +827,7 @@ strong {
 @media (max-width:450px){
     .pop{
         margin-bottom: 0;
+        border-radius: 0;
     }
     .popcont{
         grid-template-rows: 130px 130px 130px;
@@ -979,13 +1004,19 @@ strong {
     .activcard {
         width: 100%;
     }
-
+    .activcard--bottom{
+        height: 55px;
+    }
     .activcard--port__top {
         background-size: 100%;
+        background-position: center 30%;
     }
-
+    .activcard--pom__top{
+        background-position: center 45%;
+    }
     .activcard--cal__top {
-        background-size: 150%;
+        background-size: 100%;
+        background-position: center 20%;
     }
 }
 
