@@ -531,7 +531,7 @@ strong {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .marseille {
@@ -853,7 +853,7 @@ strong {
 }
 
 .heading--h2--activ {
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .activ__cont {
