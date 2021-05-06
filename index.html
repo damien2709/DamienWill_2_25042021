@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="FR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,35 +8,40 @@
     <title>Reservia</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600;700;800;900&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/4080d911bd.js" crossorigin="anonymous"></script>
 
 </head>
-<body>
 
-    <div class="container">
+<body>
 
     <!-- SECTION HEADER-->
 
-        <header class="header">
-            <div class="logo"><img class="logo__img" src="images/logo/Reservia.svg" alt="Logo Reservia Company"></div>
-            <nav class="barnav">
-                <a href="#hebergement" class="barnav__a barnav__a--activ">Hébergements</a>
-                <a href="#activites" class="barnav__a ">Activités</a>
-            </nav>
-            <div class="inscri">
-                <a class="inscri__a" href="">S'inscrire</a>
-            </div>
-            
+    <header class="header">
+        <div class="logo"><img class="logo__img" src="images/logo/Reservia.svg" alt="Logo Reservia Company"></div>
+        <nav class="barnav">
+            <a href="#hebergement" class="barnav__a barnav__a--activ">Hébergements</a>
+            <a href="#activites" class="barnav__a ">Activités</a>
+        </nav>
+        <div class="inscri">
+            <a class="inscri__a" href="">S'inscrire</a>
+        </div>
 
-        </header>
 
-    <!-- SECTION RECHERCHE-->
+    </header>
+
+    <!-- SECTION MAIN -->
+
+    <main class="main">
+
+        <!-- SECTION RECHERCHE-->
         <section class="recherche">
             <h1 class="heading heading--h1">Trouvez votre hébergement pour des vacances de rêve</h1>
             <p class="text text--recherche">En plein centre ville ou en pleine nature</p>
             <form action="#" class="form">
-                <div class="form__map"><i class="fas fa-map-marker-alt"></i></div> <!-- this icon's 1) style prefix == fas and 2) icon name == camera -->
+                <div class="form__map"><i class="fas fa-map-marker-alt"></i></div>
+                <!-- this icon's 1) style prefix == fas and 2) icon name == camera -->
                 <div class="form__input-cont">
                     <input class="form__input" type="search" value="Marseille, France">
                     <div class="loupecont">
@@ -46,9 +52,9 @@
                     </div>
                     <input type="submit" value="Rechercher" class="form__submit">
                 </div>
-                
-            </form>   
-                   
+
+            </form>
+
             <div class="filtre">
                 <div class="text text--filtre f1">Filtres</div>
                 <div class="filtre__button f2">
@@ -66,7 +72,7 @@
                 <div class="filtre__button">
                     <div class="filtre__button__div"><i class="fas fas--filtre fa-dog"></i></div>
                     <div class="text text--filtre">Animaux autorisés</div>
-                </div> 
+                </div>
             </div>
             <div class="compte">
                 <div class="info"><i class="fas fa-info"></i></div>
@@ -75,10 +81,10 @@
             </div>
         </section>
 
-    <!-- SECTION PRESENTATION-->
-        <section class="hebergement" id="hebergement">
+        <!-- SECTION PRESENTATION-->
+        <section class="hebergement">
             <div class="marseille">
-                <h2 class="heading heading--h2 heading--h2--marseille">Hébergements à Marseille</h2>
+                <h2 class="heading heading--h2 heading--h2--marseille" id="hebergement">Hébergements à Marseille</h2>
                 <div class="hebcont">
                     <a href="#" class="hebcard">
                         <div class="hebcard__top hebcard__top1"></div>
@@ -220,9 +226,9 @@
             </div>
         </section>
 
-    <!-- SECTION ACTIVITES-->
+        <!-- SECTION ACTIVITES-->
         <section class="activ" id="activites">
-            <h2 class="heading heading--h2">Activités à Marseille</h2>
+            <h2 class="heading heading--h2 heading--h2--activ">Activités à Marseille</h2>
             <div class="activ__cont">
                 <a class="activcard activcard--port" href="#">
                     <div class="activcard--top activcard--port__top"></div>
@@ -252,29 +258,32 @@
 
         </section>
 
+
+    </main>
+
     <!-- SECTION FOOTER-->
-        <footer class="footer">
-            <div class="footer__cont">
-                <div class="footer__div">
-                    <h3 class="heading heading--h4">A propos</h3>
-                    <p class="text"><a class="footer__a" href="#">Fonctionnement du site</a></p>
-                    <p class="text"><a class="footer__a" href="#">Conditions générales de vente</a></p>
-                    <p class="text"><a class="footer__a" href="#">Données et confidentialité</a></p>
-                </div>
-
-                <div class="footer__div">
-                    <h3 class="heading heading--h4">Nos hébergements</h3>
-                    <p class="text"><a class="footer__a" href="#">Charte et qualité</a></p>
-                    <p class="text"><a class="footer__a" href="#">Soumettre votre hôtel</a></p>
-                </div>
-
-                <div class="footer__div">
-                    <h3 class="heading heading--h4">Assistance</h3>
-                    <p class="text"><a class="footer__a" href="#">Centre d'aide</a></p>
-                    <p class="text"><a class="footer__a" href="#">Nous contacter</a></p>
-                </div>
+    <footer class="footer">
+        <div class="footer__cont">
+            <div class="footer__div">
+                <h3 class="heading heading--h4">A propos</h3>
+                <p class="text"><a class="footer__a" href="#">Fonctionnement du site</a></p>
+                <p class="text"><a class="footer__a" href="#">Conditions générales de vente</a></p>
+                <p class="text"><a class="footer__a" href="#">Données et confidentialité</a></p>
             </div>
-        </footer>
-    </div>   
+
+            <div class="footer__div">
+                <h3 class="heading heading--h4">Nos hébergements</h3>
+                <p class="text"><a class="footer__a" href="#">Charte et qualité</a></p>
+                <p class="text"><a class="footer__a" href="#">Soumettre votre hôtel</a></p>
+            </div>
+
+            <div class="footer__div">
+                <h3 class="heading heading--h4">Assistance</h3>
+                <p class="text"><a class="footer__a" href="#">Centre d'aide</a></p>
+                <p class="text"><a class="footer__a" href="#">Nous contacter</a></p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
