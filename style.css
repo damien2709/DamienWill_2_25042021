@@ -68,6 +68,9 @@ strong {
     .main {
         padding: 0;
     }
+    .heading--h1{
+        font-size: 1.4em;
+    }
 }
 
 /* SECTION HEADER */
@@ -291,6 +294,12 @@ strong {
     .recherche {
         margin: 0 20px;
     }
+    .text--recherche{
+        font-size: 1em;
+    }
+    .form__input{
+        font-size: 1em;
+    }
 }
 
 @media (min-width: 767px) {
@@ -457,6 +466,41 @@ strong {
     }
 }
 
+@media (max-width: 570px){
+    .filtre{
+        justify-content: space-between;
+    }
+    .filtre__button{
+        height: 40px;
+        padding-right: 20px;
+    }
+    .filtre__button__div{
+        height: 38px;
+        width: 38px;
+    }
+    .text--filtre:not(:first-child){
+        font-size: 1em;
+        padding-left: 50px;  
+    }
+    .f1{
+        font-size: 1em;
+    }  
+    .f3{
+        margin-right: 0;
+    }
+    .compte{
+        align-items: flex-start;
+    }
+    .text--compte{
+        font-size: 1em;
+    }
+    .info {
+        height: 22px;
+        flex: 0 0 22px;
+    }
+
+}
+
 /* SECTION PRESENTATION */
 
 /* PRESENTATION / HEBERGEMENT */
@@ -618,12 +662,25 @@ strong {
         -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
         order: 1;
+        background: none;
     }
 
     .hebcard {
         width: 100%;
-        height: 160px
+        height: 200px
     }
+    .hebcard__bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .text--hebcard{
+        padding-top: 5px;
+    }
+    .text--marseille{
+        font-size: 1em;
+    }
+   
 }
 
 /* PRESENTATION / POP */
@@ -734,12 +791,33 @@ strong {
     }
 }
 
-@media (min-width: 570px) and (max-width: 1049px) {
+@media (min-width: 450px) and (max-width: 1049px) {
     .popcont {
         grid-template-columns: 0.6fr;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
+    }
+}
+
+@media (max-width:450px){
+    .pop{
+        margin-bottom: 0;
+    }
+    .popcont{
+        grid-template-rows: 130px 130px 130px;
+    }
+    .popcard__left{
+        flex: 0 0 120px;
+    }
+    .heading--h2{
+        font-size: 1.2em;
+    }
+    .heading--h3{
+        font-size: 0.95em;
+    }
+    .text--hebcard{
+        font-size: 0.8em;
     }
 }
 
@@ -964,5 +1042,15 @@ strong {
     .footer__div {
         margin-right: 0;
         margin-bottom: 30px;
+    }
+    
+}
+
+@media (max-width:450px){
+    .heading--h4{
+        font-size: 1em;
+    }
+    .footer__a{
+        font-size: 1.1em;
     }
 }
